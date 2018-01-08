@@ -1,0 +1,20 @@
+.jumbotron {
+	background-color: lightblue;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 50pt;
+	color: white;
+	background-color: black;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+
+
+}
