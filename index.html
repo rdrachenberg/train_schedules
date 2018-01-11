@@ -29,6 +29,7 @@
 				<h4>Choo Choo, Chee Chee.</h4>
 			</span>
 		</div>
+		<!-- creates first row -->
 		<div class="row" id="rowOne">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
@@ -39,53 +40,58 @@
 			</div>
 			<div class="col-md-12">
 				<h5>
+					<!-- create a table -->
 					<table class="table">
+						<!-- creates a row with the header title names -->
 						<tr class="headersTable">
-							<th>Train</th>
-							<th>Destination</th>
-							<th>Frequency (min)</th> <!-- frequency -->
-							<th>First Arrival</th><!--  first train time in military time -->
-							<th>Next Arrival</th> <!-- next arrival time -->
-							<th>Minutes Until Arrival</th>
+							<th>Train</th> <!-- Train name header -->
+							<th>Destination</th> <!-- Destination header -->
+							<th>Frequency (min)</th> <!-- Frequency Header -->
+							<th>First Arrival</th> <!-- First Arrival Header -->
+							<th>Next Arrival</th> <!-- next arrival time header -->
+							<th>Minutes Until Arrival</th> <!-- min until arrival header -->
 						</tr>
 					</table>
 				</h5>
 			</div>
 		</div>
 		<hr></hr>
-
+		<!-- create a wrapper to hold all input form items -->
 		<div class="wrapper" id="grid">
 			<div class="row" id="rowTwo">
 				<form>
-			  		<!-- <div class="form-control"> -->
 			    		<div class="col-auto">
-
 							<h3>Enter train data below
   								<span class="txt-rotate"
   								data-period="2000"
   								data-rotate='[ "train.", "train data.", " train data below."]'></span>
   							</h3>
+  							<!-- creates input box to hold information about the Train Name -->
 			      			<label class="sr-only" for="inlineFormInput">Train Name</label>
 			      				<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Train name?">
 			    			</label>
 			  			</div>
 			  			<div class="col-auto">
+			  				<!-- creates input box to hold information about the destination -->
 			      			<label class="sr-only" for="inlineFormInput">Destination</label>
 			      				<input type="text" class="form-control mb-2" id="destination" placeholder="Destination?">
 			    			</label>
 			  			</div>
 			  			<div class="col-auto">
+			  				<!-- creates input box to hold information about the first train departure information -->
 			      			<label class="sr-only" for="inlineFormInput">Arrival Time</label>
 			      				<input type="text" class="form-control mb-2" id="arrivalTime" placeholder="First Train Leaves?">
 			    			</label>
 			  			</div>
 			  			<div class="col-auto">
+			  				<!-- creates input box to hold information about the how often in minutes the train runs -->
 			      			<label class="sr-only" for="inlineFormInput">Frequency in min</label>
 			      				<input type="text" class="form-control mb-2" id="frequency" placeholder="Frequency in min?">
 			    			</label>
 			  			</div>
 			    	<!-- </div> -->
 			    	<div class="col-auto">
+			    		<!-- creates our button -->
 			      		<button type="submit" class="btn btn-primary mb-2" id="submit">Submit</button>
 			    	</div>
 			    </form>
@@ -93,6 +99,7 @@
 		</div>
 		</div>
 	</div>
+	<!-- link to moment.js -->
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </body>
 </html>
