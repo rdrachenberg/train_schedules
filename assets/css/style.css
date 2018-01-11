@@ -18,6 +18,8 @@
 
 .wrapper {
         display: grid;
+        width: 650px;
+        max-width: 90%;
     	grid-gap: 10px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
         background-color: #fff;

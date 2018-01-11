@@ -46,7 +46,7 @@ $(document).ready(function(){
 	    // sets timeout to reset the page and then therefore updateing the data
 		setTimeout(function(){
        	location.reload();
-   		},1000);
+   		},45000);
 	});
 
 	// creates an event listener to monitor when a chiled element 
@@ -74,11 +74,11 @@ $(document).ready(function(){
     // create a variable  and equals it to the frequuency minus how much time 
     // until the next frequency interval which will be equal to the  Minutes Until
     // the trai arrives
-    var tMinutesTillTrain = tFrequency - tRemainder;
+    var tMinTillTrain = tFrequency - tRemainder;
     
     // creates a vaiable equal to now plus the minutes left until the
      // Next Train arrives which will return the time of arrival
-    var arrivingTrain = moment().add(tMinutesTillTrain, "minutes");
+    var arrivingTrain = moment().add(tMinTillTrain, "minutes");
     
     // additional vaiable to clean up the variable and will display same information
     var nextArrival = moment(arrivingTrain).format("hh:mm");
@@ -91,7 +91,7 @@ $(document).ready(function(){
 	addRow.append("<td>" + (snapshot.val().frequency) + "</td>");
 	addRow.append("<td>" + (snapshot.val().arrivalTime) + "</td>");
 	addRow.append('<td id="nextArrival">' + (nextArrival) + "</td>");
-	addRow.append('<td id="nextMin">' + (tMinutesTillTrain) + "</td>");
+	addRow.append('<td id="nextMin">' + (tMinTillTrain) + "</td>");
 
 	
 	// select the class of table and append all information to a new table row which is created in the add row variable
@@ -101,7 +101,7 @@ $(document).ready(function(){
 	// sets timeout to reset the page and then therefore updateing the data
 	setTimeout(function(){
        location.reload();
-   },60000);
+   },100000);
 
     
 });
