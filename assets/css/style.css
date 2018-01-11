@@ -56,6 +56,7 @@ hr {
 }
 
 form {
+	max-width: auto 100%;
 	background-color: blue;
 	padding-top: 5px;
 	padding-bottom: 15px;
